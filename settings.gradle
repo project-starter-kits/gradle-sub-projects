@@ -1,0 +1,12 @@
+rootProject.name = 'project'
+include ':project-util'
+include ':project-domain'
+include ':project-dataaccess'
+include ':project-services'
+include ':project-web'
+
+project(':project-util').projectDir = "$rootDir/util" as File
+project(':project-domain').projectDir = "$rootDir/domain" as File
+project(':project-dataaccess').projectDir = "$rootDir/dataaccess" as File
+project(':project-services').projectDir = "$rootDir/services" as File
+project(':project-web').projectDir = "$rootDir/web" as File

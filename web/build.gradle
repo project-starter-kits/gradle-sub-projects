@@ -1,0 +1,17 @@
+apply plugin: 'war'
+
+description = 'project-web'
+dependencies {
+    compile project(':project-util')
+    compile project(':project-domain')
+    compile project(':project-services')
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: log4j2Version
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: log4j2Version
+    compile group: 'org.apache.logging.log4j', name: 'log4j-web', version: log4j2Version
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: servletApiVersion
+    compile group: 'org.springframework', name: 'spring-core', version: springVersion
+    compile group: 'org.springframework', name: 'spring-beans', version: springVersion
+    compile group: 'org.springframework', name: 'spring-context', version: springVersion
+    compile group: 'org.springframework', name: 'spring-web', version: springVersion
+    compile group: 'org.springframework', name: 'spring-webmvc', version: springVersion
+}
